@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regency Rope</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body class="bg-info">
+    <div class="container">
+        <div class="jumbotron">
+            <p style="text-align: center;">List of Data</p>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Subject</th>
+                <th>Message</th>
+            </thead>
+            <tbody>
+                <% for (let dt of data) {%>
+                    <tr>
+                        <td><%= dt.name%></td>
+                        <td><%= dt.email%></td>
+                        <td><%= dt.phone%></td>
+                        <td><%= dt.subject%></td>
+                        <td><%= dt.message%></td>
+                    </tr>
+                <%}%>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
